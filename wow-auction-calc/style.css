@@ -1,0 +1,45 @@
+#recipes-table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#results-table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 25%;
+}
+
+#recipes-table th {
+	background-color: #dddddd;
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+#recipes-table td {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+#results-table td,
+#results-table th {
+	background-color: #eeeeee;
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+#recipes-table>tbody>tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+.reagent-table {
+	background-color: #FFFFFF;
+}
+
+input[type='text'], input[type='password'] {
+	display: block;
+	width: 50%;
+}

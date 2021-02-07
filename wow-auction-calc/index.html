@@ -1,0 +1,49 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<select id="profession-selection" onchange="onProfessionSelection()"></select>
+	<select id="skilltier-selection" onchange="onSkilltierSelection()"></select>
+	<select id="category-selection" onchange="onCategorySelection()"></select>
+	<select id="recipe-selection"></select>
+	<button onclick="addRecipeToList()">Add Recipe</button>
+	<div>
+		<table id="recipes-table">
+			<thead>
+				<tr>
+					<th><b>Recipe name</b></td>
+					<th><b>Reagents</b></th>
+					<th><b>Recipe cost</b></td>
+				</tr>
+			</thead>
+			<tbody id="added-recipes-list">
+			</tbody>
+		</table>
+		<table id="results-table">
+			<tr>
+				<td><b>Total cost:</b></td>
+				<td id="total-cost-value">0</td>
+			</tr>
+			<tr>
+				<td><b>Minimum sell price:</b></td>
+				<td id="minimum-sell-price-value">0</td>
+			</tr>
+		</table>
+	</div>
+	<button onclick="clearAddedRecipes()">Clear Recipes</button>
+
+	<div id="login-form">
+		<hr>
+		<form action="javascript:main(getById('client-id').value, getById('client-secret').value)">
+			<input id="client-id" type="text" placeholder="client-id" />
+			<input id="client-secret" type="password" placeholder="client-secret" />
+			<button type="submit">Login</button>
+		</form>
+	</div>
+	<script src="./omain.js"></script>
+</body>
+
+</html>
